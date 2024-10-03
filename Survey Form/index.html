@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Website Feedback Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Website Feedback Survey</h1>
+    <p id="description">We appreciate your feedback! Please take a moment to complete this short survey. Your responses will help us improve the website experience.</p>
+    <form method="post" action='#' id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+        <label for="email" id="email-label">Email <input id="email" name="email" type="email" required placeholder="Enter your email"/></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How would you rate your experience? (required)</legend>
+        <label for="excellent"><input value="excellent" id="excellent" type="radio" name="experience-rate" class="inline" required /> Excellent</label>
+        <label for="good"><input value="good" id="good" type="radio" name="experience-rate" class="inline" /> Good</label>
+        <label for="average"><input value="average" id="average" type="radio" name="experience-rate" class="inline" /> Average</label>
+        <label for="poor"><input value="poor" id="poor" type="radio" name="experience-rate" class="inline" /> Poor</label>
+        <label for="very-poor"><input value="very-poor" id="very-poor" type="radio" name="experience-rate" class="inline" /> Very Poor</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How easy was it to navigate the website? (required)</legend>
+        <label for="very-easy"><input value="very-easy" id="very-easy" type="radio" name="navigation-rate" class="inline" required /> Very Easy</label>
+        <label for="somewhat-easy"><input value="somewhat-easy" id="somewhat-easy" type="radio" name="navigation-rate" class="inline" /> Somewhat Easy</label>
+        <label for="neutral"><input value="neutral" id="neutral" type="radio" name="navigation-rate" class="inline" /> Neutral</label>
+        <label for="somewhat-difficult"><input value="somewhat-difficult" id="somewhat-difficult" type="radio" name="navigation-rate" class="inline" /> Somewhat Difficult</label>
+        <label for="very-difficult"><input value="very-difficult" id="very-difficult" type="radio" name="navigation-rate" class="inline" /> Very Difficult</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What do you think of the overall design of the website? (required)</legend>
+        <label for="modern-and-clean"><input value="modern-and-clean" id="modern-and-clean" type="radio" name="design-rate" class="inline" required /> Modern and Clean</label>
+        <label for="simple-and-minimalist"><input value="simple-and-minimalist" id="simple-and-minimalist" type="radio" name="design-rate" class="inline" /> Simple and Minimalist</label>
+        <label for="outdated"><input value="outdated" id="outdated" type="radio" name="design-rate" class="inline" /> Outdated</label>
+        <label for="too-complex"><input value="too-complex" id="too-complex" type="radio" name="design-rate" class="inline" /> Too Complex</label>
+        <label for="just-right"><input value="just-right" id="just-right" type="radio" name="design-rate" class="inline" /> Just Right</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How satisfied are you with the overall experience? (required)</legend>
+        <label for="very-satisfied"><input value="very-satisfied" id="very-satisfied" type="radio" name="satisfaction-rate" class="inline" required /> Very Satisfied</label>
+        <label for="satisfied"><input value="satisfied" id="satisfied" type="radio" name="satisfaction-rate" class="inline" /> Satisfied</label>
+        <label for="neutral"><input value="neutral" id="neutral" type="radio" name="satisfaction-rate" class="inline" /> Neutral</label>
+        <label for="dissatisfied"><input value="dissatisfied" id="dissatisfied" type="radio" name="satisfaction-rate" class="inline" /> Dissatisfied</label>
+        <label for="very-dissatisfied"><input value="very-dissatisfied" id="very-dissatisfied" type="radio" name="satisfaction-rate" class="inline" /> Very Dissatisfied</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which features of the website have you used? (required)</legend>
+        <label for="homepage"><input id="homepage" type="checkbox" name="homepage" class="inline" value="homepage" checked /> Homepage</label>
+        <label for="search-bar"><input id="search-bar" type="checkbox" name="search-bar" class="inline" value="search-bar" /> Search Bar</label>
+        <label for="blog-news"><input id="blog-news" type="checkbox" name="blog-news" class="inline" value="blog-news" /> Blog/News</label>
+        <label for="contact-form"><input id="contact-form" type="checkbox" name="contact-form" class="inline" value="contact-form" /> Contact Form</label>
+        <label for="product-pages"><input id="product-pages" type="checkbox" name="product-pages" class="inline" value="product-pages" /> Product Pages</label>
+        <label for="user-account-sign-in"><input id="user-account-sign-in" type="checkbox" name="user-account-sign-in" class="inline" value="user-account-sign-in" /> User Account/Sign In</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="number" id="number-label">Age (years, optional): <input id="number" type="number" name="age" min="13" max="120" placeholder="Age"/></label>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="" disabled selected>(select one)</option>
+            <option value="1">Our Website's News</option>
+            <option value="2">Our Official YouTube Channel</option>
+            <option value="3">Our Twitter</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Additional Notes:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter any additional information here"></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
